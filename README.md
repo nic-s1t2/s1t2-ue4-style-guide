@@ -310,18 +310,42 @@ There are multiple ways to lay out the content of a UE4 project. In this style, 
 > If you are using the prefix [naming convention](#1.2) above, using folders to contain assets of similar types such as `Meshes`, `Textures`, and `Materials` is a redundant practice as asset types are already both sorted by prefix as well as able to be filtered in the content browser.
 
 <a name="2e1"><a>
-### 2e1 Example Project Content Structure
+### 2e1 Example Perforce Project Folder Setup
 <pre>
-|-- Content
-    |-- <a href="#2.2">ProjectName</a>
-        |-- Art
-        |-- <a href="#2.5">Core</a>
-        |-- <a href="#2.4">Maps</a>
-        |-- <a href="#2.8">MaterialLibrary</a>
-        |-- UI
+|-- ProjectName
+    |-- ...
+    |-- Content
+    	|-- <a href="#2.2">ProjectName</a>
+            |-- Art
+            |-- <a href="#2.5">Core</a>
+            |-- <a href="#2.4">Maps</a>
+            |-- <a href="#2.8">MaterialLibrary</a>
+            |-- UI
+    |-- ...
+|-- ProjectNameAssets
+    |-- Exports
+    	|-- Art
+	|-- UI
+    |-- SourceFiles
+    	|-- Art
+	|-- UI
 </pre>
 
-The reasons for this structure are listed in the following sub-sections.
+Note the two Top Level folders.
+
+The first is the Unreal Engine Project itself, and then dictates the Content Folder contents therein.
+
+The second is the "Assets" folder, where we keep and commit all working and final assets for import into the Unreal Engine. This has two subdirectories:
+
+Exports: This should be a mirror of the Content folder inside the project itself, but containing all the raw assets: PNGs, WAVs, FBXs, etc. This is also the location where they should be imported from, so that should one be updated, you can simply use the "Reimport Asset" functionality of Unreal Engine to update the content in-engine. This should be able to be done from any machine with the correct Perforce configuration.
+
+SourceFiles: This folder is to contain all the raw, working files, such as Photoshop projects, Audacity projects, Maya scenefiles, etc. Again, this folder structure should mirror the Content folder inside of Unreal itself, to minimise confusion and ensure consistency.
+
+As a visualisation, you can think of the flow of assets, from most raw to completely integrated, as:
+
+**SourceFiles > Exports > Content**
+
+The reasons for this mirrored structure are listed in the following sub-sections.
 
 ### Sections
 
