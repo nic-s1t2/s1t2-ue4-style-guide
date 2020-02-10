@@ -1,5 +1,6 @@
 ## Table of Contents
 
+> 1. [Project Specific Information](#prj)
 > 1. [Asset Naming Conventions](#anc)
 > 1. [Directory Structure](#structure)
 > 1. [Blueprints](#bp)
@@ -7,6 +8,17 @@
 > 1. [Particle Systems](#ps)
 > 1. [Levels / Maps](#levels)
 > 1. [Textures](#textures)
+
+<a name="prj"></a>
+<a name="0"></a>
+## 0. Project Specific Information
+
+```
+Project specific information goes here
+Class prefixes
+Specific considerations
+Plugin/module information
+```
 
 <a name="anc"></a>
 <a name="1"></a>
