@@ -337,9 +337,9 @@ The first is the Unreal Engine Project itself, and then dictates the Content Fol
 
 The second is the "Assets" folder, where we keep and commit all working and final assets for import into the Unreal Engine. This has two subdirectories:
 
-Exports: This should be a mirror of the Content folder inside the project itself, but containing all the raw assets: PNGs, WAVs, FBXs, etc. This is also the location where they should be imported from, so that should one be updated, you can simply use the "Reimport Asset" functionality of Unreal Engine to update the content in-engine. This should be able to be done from any machine with the correct Perforce configuration.
+**Exports**: This should be a mirror of the Content folder inside the project itself, but containing all the raw assets: PNGs, WAVs, FBXs, etc. This is also the location where they should be imported from, so that should one be updated, you can simply use the "Reimport Asset" functionality of Unreal Engine to update the content in-engine. This should be able to be done from any machine with the correct Perforce configuration.
 
-SourceFiles: This folder is to contain all the raw, working files, such as Photoshop projects, Audacity projects, Maya scenefiles, etc. Again, this folder structure should mirror the Content folder inside of Unreal itself, to minimise confusion and ensure consistency.
+**SourceFiles**: This folder is to contain all the raw, working files, such as Photoshop projects, Audacity projects, Maya scenefiles, etc. Again, this folder structure should mirror the Content folder inside of Unreal itself, to minimise confusion and ensure consistency.
 
 As a visualisation, you can think of the flow of assets, from most raw to completely integrated, as:
 
