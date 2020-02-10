@@ -509,14 +509,14 @@ There simply shouldn't be any empty folders. They clutter the content browser.
 
 If you find that the content browser has an empty folder you can't delete, you should perform the following:
 1. Inform your lead developer.
-~~1. Be sure you're using source control.~~
-~~1. Immediately run Fix Up Redirectors on your project.~~
-~~1. Navigate to the folder on-disk and delete the assets inside.~~
-~~1. Close the editor.~~
-~~1. Make sure your source control state is in sync (i.e. if using Perforce, run a Reconcile Offline Work on your content directory)~~
-~~1. Open the editor. Confirm everything still works as expected. If it doesn't, revert, figure out what went wrong, and try again.~~
-~~1. Ensure the folder is now gone.~~
-~~1. Submit changes to source control.~~
+~~1. Be sure you're using source control.~~  
+~~1. Immediately run Fix Up Redirectors on your project.~~  
+~~1. Navigate to the folder on-disk and delete the assets inside.~~  
+~~1. Close the editor.~~  
+~~1. Make sure your source control state is in sync (i.e. if using Perforce, run a Reconcile Offline Work on your content directory)~~  
+~~1. Open the editor. Confirm everything still works as expected. If it doesn't, revert, figure out what went wrong, and try again.~~  
+~~1. Ensure the folder is now gone.~~  
+~~1. Submit changes to source control.~~  
 
 **[⬆ Back to Top](#table-of-contents)**
 
