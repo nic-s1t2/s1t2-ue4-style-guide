@@ -389,8 +389,6 @@ These are common rules for naming any folder in the content structure.
 
 PascalCase refers to starting a name with a capital letter and then instead of using spaces, every following word also starts with a capital letter. For example, `DesertEagle`, `RocketPistol`, and `ASeriesOfWords`.
 
-See [Cases](#terms-cases).
-
 <a name="2.1.2"></a>
 #### 2.1.2 Never Use Spaces ![#](https://img.shields.io/badge/lint-supported-green.svg)
 
