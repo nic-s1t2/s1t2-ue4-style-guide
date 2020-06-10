@@ -20,6 +20,23 @@ Specific considerations
 Plugin/module information
 ```
 
+<a name="prj-code"></a>
+<a name="0"></a>
+### 0.1 Project Code Standards
+
+```
+Standards for coding
+some common
+```
+
+#### 0.1.1 Actor Components
+
+When declaring a Sub Object or Component of an actor, always use the following `UPROPERTY` Macro:
+
+`UPROPERTY(VisibleAnywhere, BlueprintReadWrite, meta = (AllowPrivateAccess = "true"))`
+
+This ensures it has the correct access in Blueprint Child Classes.
+
 <a name="anc"></a>
 <a name="1"></a>
 ## 1. Asset Naming Conventions ![#](https://img.shields.io/badge/lint-partial_support-yellow.svg)
