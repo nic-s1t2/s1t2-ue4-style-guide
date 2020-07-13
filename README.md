@@ -29,7 +29,45 @@ Standards for coding
 some common
 ```
 
-#### 0.1.1 Actor Components
+<a name="2e1"><a>
+### 0.1.1 Example Perforce Project Folder Setup
+<pre>
+|-- ProjectName
+    |-- ...
+    |-- Content
+    	|-- <a href="#2.2">ProjectName</a>
+            |-- Art
+            |-- <a href="#2.5">Core</a>
+            |-- <a href="#2.4">Maps</a>
+            |-- <a href="#2.8">MaterialLibrary</a>
+            |-- UI
+    |-- ...
+|-- ProjectNameAssets
+    |-- <a href="#0113">Exports</a>
+    	|-- Art
+	|-- UI
+    |-- <a href="#0112">SourceFiles</a>
+    	|-- Art
+	|-- UI
+</pre>
+
+Note the two Top Level folders.
+
+The first is the Unreal Engine Project itself, and then dictates the Content Folder contents therein.
+
+The second is the "Assets" folder, where we keep and commit all working and final assets for import into the Unreal Engine. This has two subdirectories:
+
+[**Exports**](#0113): This should be a mirror of the Content folder inside the project itself, but containing all the raw assets: PNGs, WAVs, FBXs, etc. This is also the location where they should be imported from, so that should one be updated, you can simply use the "Reimport Asset" functionality of Unreal Engine to update the content in-engine. This should be able to be done from any machine with the correct Perforce configuration.
+
+[**SourceFiles**](#0112): This folder is to contain all the raw, working files, such as Photoshop projects, Audacity projects, Maya scenefiles, etc. Again, this folder structure should mirror the Content folder inside of Unreal itself, to minimise confusion and ensure consistency.
+
+As a visualisation, you can think of the flow of assets, from most raw to completely integrated, as:
+
+**SourceFiles > Exports > Content**
+
+The reasons for this mirrored structure are listed in the following sub-sections.
+
+#### 0.1.2 Actor Components
 
 When declaring a Sub Object or Component of an actor, always use the following `UPROPERTY` Macro:
 
